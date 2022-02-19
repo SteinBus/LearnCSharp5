@@ -12,7 +12,7 @@ class Program
             Y = 10
         };
         int xAxis = 4;
-        int yAxis = -1;
+        int yAxis = 2;
         try
         {
             Ellipse ellipse = new Ellipse(centerPoint, xAxis, yAxis);

@@ -5,7 +5,7 @@ namespace LearnCSharp5
     class Ellipse
     {
         public Point CenterPoint { get; private set; }
-        public int XAxis { get; private set; }
+        public int XAxis { get; private set; } 
         public int YAxis { get; private set; }
         public Ellipse(Point centerPoint, int xAxis, int yAxis)
         {
@@ -23,8 +23,8 @@ namespace LearnCSharp5
         }
         public double GetPerimeter()
         {
-            double formulaTop = Math.PI * XAxis * YAxis + (XAxis - YAxis) * (XAxis - YAxis);
-            return 4 * formulaTop / (XAxis + YAxis);
+            double formulaTop = (XAxis * XAxis + YAxis * YAxis) / 2;
+            return 2 * Math.PI * Math.Sqrt(formulaTop);
         }
         public double GetSquare()
         {
